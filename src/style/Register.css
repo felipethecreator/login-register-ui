@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    
+
 }
 
 input {
@@ -14,10 +14,12 @@ input {
     border: 1px solid #0c3c60;
     padding-left: 60px;
     box-shadow: 2px 2px 8px #0c3c60;
-    
+
 }
 
-#nome, #idade, #cpf {
+#nome,
+#idade,
+#cpf {
     background-image: url('../assets/imgs/personIcon.png');
     background-repeat: no-repeat;
     background-position: 10px center;
@@ -25,7 +27,7 @@ input {
     width: 220px;
     height: 50px;
     background-size: 20px;
-    
+
 }
 
 #idade {
@@ -33,18 +35,25 @@ input {
 }
 
 #cpf {
-    background-image: url(../assets/imgs/cpfIcon.png);
+    background-image: url('../assets/imgs/cpfIcon.png');
+}
+
+#confirmButton:hover {
+    background-color: #2390a6;
+
 }
 
 #confirmButton {
     width: 220px;
     height: 50px;
-    border-radius: 20px;   
+    border-radius: 20px;
     border: 2px solid #0c3c60;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     background-color: #0c3c60;
     color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 #formTitle {
@@ -52,7 +61,7 @@ input {
     color: white;
     text-shadow: 2px 2px 6px black;
     font-size: 35px;
-    
+
 }
 
 #footer {
@@ -68,4 +77,16 @@ input {
     text-decoration: none;
     color: rgb(131, 20, 20);
     font-weight: 700;
+    transition-duration: 1s;
+    position: relative;
+}
+
+#linkProNether:hover {
+    color: white;
+    background-image: url('../assets/imgs/hoverFoginho.gif');
+    background-size:initial;
+    background-position: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0010pxrgba(0, 0, 0, 0.5);
 }
